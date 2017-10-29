@@ -1,0 +1,1 @@
+ntpdate -u your.ntp.server.ip
