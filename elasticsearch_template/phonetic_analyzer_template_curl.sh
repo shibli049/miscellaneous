@@ -1,0 +1,1 @@
+curl -XPUT 'localhost:9200/_template/dbl_metaphone_analyzer_template_test?pretty' -H 'Content-Type: application/json'  --data "@./phonetic_analyzer_template.json"

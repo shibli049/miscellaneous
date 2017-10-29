@@ -1,0 +1,1 @@
+curl -XPUT 'localhost:9200/_template/ngram_analyzer_template?pretty' -H 'Content-Type: application/json'  --data "@./ngram_template.json"

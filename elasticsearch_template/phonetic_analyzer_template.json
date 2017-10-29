@@ -1,0 +1,21 @@
+{
+    "template": "*_phonetic*",
+    "settings": {
+          "analysis": {
+              "filter": {
+                  "custom_metaphone": { 
+                      "type":    "phonetic",
+                      "encoder": "double_metaphone"
+                  }
+              },
+              "analyzer": {
+                  "dbl_metaphone": {
+                      "type":      "custom",
+                      "tokenizer": "standard",
+                      "filter": ["custom_metaphone"]
+                  }
+              }
+          }
+      },
+      "version": 2
+  }

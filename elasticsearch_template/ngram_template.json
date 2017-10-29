@@ -1,0 +1,25 @@
+{
+    "template": "*_ngram*",
+    "settings": {
+          "analysis": {
+              "filter": {
+                  "ngram_filter": { 
+                      "type":     "ngram",
+                      "min_gram": 1,
+                      "max_gram": 20
+                  }
+              },
+              "analyzer": {
+                  "ngram": {
+                      "type":      "custom",
+                      "tokenizer": "standard",
+                      "filter": [
+                          "lowercase",
+                          "ngram_filter" 
+                      ]
+                  }
+              }
+          }
+      },
+      "version": 2
+  }
