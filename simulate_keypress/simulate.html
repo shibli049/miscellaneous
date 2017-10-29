@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Simulate keypress</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="./simulate_keypress.js"></script>
+        <script>
+            $(function() {
+                $('body').keypress(function(e) {
+                    alert("keypressed: " + e.which);
+                });
+            });
+            setTimeout( "simulateKeyPress(' ')", 500);
+        </script>
+    </head>
+    <body>
+        This html will simulate '\s' keypress after loaded.
+    </body>
+</html>
