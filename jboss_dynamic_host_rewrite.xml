@@ -1,0 +1,3 @@
+<-- source: https://docs.jboss.org/author/display/JBWS/Advanced+User+Guide#AdvancedUserGuide-Dynamicrewrite -->
+<wsdl-host>jbossws.undefined.host</wsdl-host>
+<modify-wsdl-address>true</modify-wsdl-address>
