@@ -1,20 +1,29 @@
 # miscellaneous
 ### miscellaneous collection of scripts/codes.
-* (miscellaneous collection of scripts/codes.)[./]
-* (flush dns cache on different OSs.)[./]
-* (check realtime cpu usage statistic.)[./]
-* (java gitignore collections.)[./]
-* (copy directory and exclude .svn,.git etc folder.)[./]
-* (A funny java program, takes input from user between 0 to 3 and call respective functions without using any conditional logic.)[./]
-* (ngram and phonetic template for elasticsearch 2.4.5.)[./]
-* (Gson type adapter to serialize and deserialize byte arrays in base64, removed class from andoid package and added java.util.Base64 encoder and decoder.)[./]
-* (A memory optimized sieve generator.)[./]
-* (thread-safe and thread-unsafe singleton class example.)[./]
-* (docker and docker swarm command collections.)[./]
-* (mysql unicode charset in connection url.)[./]
-* (send html enabled mail via smtp server.)[./]
-* (deploy jar to nexus maven third party repository.)[./]
-* (Check Polymorphism in java.)[./]
-* (update column with sequential value in oracle.)[./]
-* (inversion and merge sort in python.)[./]
 
+* [flush dns cache on different OSs.](./flush_dns_cache.md)
+* [check realtime cpu usage statistic](./)
+* [java gitignore collections.](./)
+* [copy directory and exclude .svn,.git etc folder.](./)
+* [A funny java program, takes input from user between 0 to 3 and call respective functions without using any conditional logic.](./)
+* [ngram and phonetic template for elasticsearch v2.4.5](./)
+* [Gson type adapter to serialize and deserialize byte arrays in base64, removed class from andoid package and added java.util.Base64 encoder and decoder.](./)
+* [A memory optimized sieve generator.](./)
+* [thread-safe and thread-unsafe singleton class example.](./)
+* [docker and docker swarm command collections](./)
+* [mysql unicode charset in connection url](./)
+* [send html enabled mail via smtp server.](./)
+* [deploy jar to nexus maven third party repository.](./)
+* [Check Polymorphism in java](./)
+* [update column with sequential value in oracle](./)
+* [inversion and merge sort in java](./)
+* [Trie datastructure implementation in java.](./)
+* [trie datastructure implementation in python](./)
+* [loop between files in a folder.](./)
+* [kill java process on windows.](./)
+* [.vscode gitignored](./)
+* [some common shell commands](./)
+* [detect changes in forms](./)
+* [permutation and combinations](./)
+* [generate oracle pagination for native query](./)
+* Others.
