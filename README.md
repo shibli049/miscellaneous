@@ -1,8 +1,8 @@
 # miscellaneous
 ### miscellaneous collection of scripts/codes.
 
-* [flush dns cache on different OSs.](./flush_dns_cache.md)
-* [check realtime cpu usage statistic](./)
+* [flush dns cache on different OSs.](./others/flush_dns_cache.md)
+* [check realtime cpu usage statistic](./shells/lscpu_monitor.sh)
 * [java gitignore collections.](./)
 * [copy directory and exclude .svn,.git etc folder.](./)
 * [A funny java program, takes input from user between 0 to 3 and call respective functions without using any conditional logic.](./)
