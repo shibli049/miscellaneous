@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the summary of the linkedin learning course: [Spring: Spring Cloud](https://www.linkedin.com/learning/spring-spring-cloud).
+This is to configure swagger for spring boot REST apis.
 
 ## Add swagger2 documentation
 
