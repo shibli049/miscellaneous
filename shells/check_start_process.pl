@@ -3,10 +3,6 @@ my @services = ('service1', 'service2');
 my @commands = ('start_service1_command', 'start_service2_command');
 
 my $root_dir = '/path/to/script/log/';
-
-my $host = `/bin/hostname`;
-chomp $host;
-
 my $logfile="$root_dir/check_process.log";
 my $date=`date`;
 chomp($date);
