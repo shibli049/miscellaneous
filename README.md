@@ -2,19 +2,19 @@
 
 ## miscellaneous collection of scripts/codes
 
-### docker
+### [docker](./docker/)
 
 * [docker_commads.sh](./docker/docker_commads.sh)
 * [docker_swarm.sh](./docker/docker_swarm.sh)
 
-### elasticsearch_template
+### [elasticsearch_template](./elasticsearch_template/)
 
 * [ngram_template.json](./elasticsearch_template/ngram_template.json)
 * [ngram_template_curl.sh](./elasticsearch_template/ngram_template_curl.sh)
 * [phonetic_analyzer_template.json](./elasticsearch_template/phonetic_analyzer_template.json)
 * [phonetic_analyzer_template_curl.sh](./elasticsearch_template/phonetic_analyzer_template_curl.sh)
 
-### java
+### [java](./java/)
 
 * [CheckPolymorphism.java](./java/CheckPolymorphism.java)
 * [FunFunctionExperiment.java](./java/FunFunctionExperiment.java)
@@ -31,18 +31,18 @@
 * [mysql_connection_for_spring.properties](./java/mysql_connection_for_spring.properties)
 * [spring-boot-swagger-config.md](./java/spring-boot-swagger-config.md)
 
-### js
+### [js](./js/)
 
 * [detect_change_in_form.js](./js/detect_change_in_form.js)
 
-### others
+### [others](./others/)
 
 * [flush_dns_cache.md](./others/flush_dns_cache.md)
 * [jboss_dynamic_host_rewrite.xml](./others/jboss_dynamic_host_rewrite.xml)
 * [jupyter_shortcuts.md](./others/jupyter_shortcuts.md)
 * [nusoap_utf8_response.php](./others/nusoap_utf8_response.php)
 
-### python
+### [python](./python/)
 
 * [OraclePagination.py](./python/OraclePagination.py)
 * [base64EncDec.py](./python/base64EncDec.py)
@@ -55,7 +55,7 @@
 * [merge_sort.py](./python/merge_sort.py)
 * [trie.py](./python/trie.py)
 
-### shells
+### [shells](./shells/)
 
 * [append_file_to_another.sh](./shells/append_file_to_another.sh)
 * [check_meltdown_ubuntu.sh](./shells/check_meltdown_ubuntu.sh)
@@ -82,11 +82,11 @@
 * [video_to_audio_ubuntu.sh](./shells/video_to_audio_ubuntu.sh)
 * [word_count_in_a_file.sh](./shells/word_count_in_a_file.sh)
 
-### simulate_keypress
+### [simulate_keypress](./simulate_keypress/)
 
 * [simulate.html](./simulate_keypress/simulate.html)
 
-### sql
+### [sql](./sql/)
 
 * [detect_duplicate_value.sql](./sql/detect_duplicate_value.sql)
 * [grantAccessMysql.sql](./sql/grantAccessMysql.sql)
