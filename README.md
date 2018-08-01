@@ -53,6 +53,7 @@
 * [kill_java_process_on_windows.py](./python/kill_java_process_on_windows.py)
 * [local_fileserver.py](./python/local_fileserver.py)
 * [merge_sort.py](./python/merge_sort.py)
+* [scripts.ipynb](./python/scripts.ipynb)
 * [trie.py](./python/trie.py)
 
 ### [shells](./shells/)
