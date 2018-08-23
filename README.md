@@ -73,6 +73,7 @@
 * [lscpu_monitor.sh](./shells/lscpu_monitor.sh)
 * [mysql_create_user.sh](./shells/mysql_create_user.sh)
 * [mysql_install_config.sh](./shells/mysql_install_config.sh)
+* [optimize_power.md](./shells/optimize_power.md)
 * [os_info.sh](./shells/os_info.sh)
 * [process_info.sh](./shells/process_info.sh)
 * [rsync_copy_exclude_dir.sh](./shells/rsync_copy_exclude_dir.sh)
