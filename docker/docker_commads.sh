@@ -25,6 +25,11 @@ docker rm container_name
 # -d for detached --name name your container -p host_port:container_port
 docker run -d --name my_container_name -p 8080:80 image_name
 
+# or, alternatively --network host will expose docker container port to host
+docker run -d --name my_container_name --network host image_name
+
+
+
 # -it interactive 
 docker run -it --name temp ubuntu /bin/bash
 
