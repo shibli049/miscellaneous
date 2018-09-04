@@ -28,6 +28,10 @@ docker run -d --name my_container_name -p 8080:80 image_name
 # -it interactive 
 docker run -it --name temp ubuntu /bin/bash
 
+# -it interactive to already running docker
+# exec run a command in already running container
+docker exec -it docker_name command_to_run
+
 # exiting docker container without stopping it
 ctrl P+Q
 
