@@ -54,3 +54,9 @@ docker commit  existing_container_name new_image_name
 
 # run docker image with auto start
 docker run -dit --restart unless-stopped --name container_name -p host_port:container_port image_name command-to-run
+
+
+# see container mount points
+docker inspect -f "{{ .Mounts }}" container_name/container_id
+
+
