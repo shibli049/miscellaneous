@@ -1,3 +1,6 @@
+// source: https://stackoverflow.com/a/9851769/669265
+// fiddle: https://jsfiddle.net/311aLtkz/
+
 // Opera 8.0+
 var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
 
