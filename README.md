@@ -33,6 +33,7 @@
 
 ### [js](./js/)
 
+* [detect browser with duck typing](./js/detect_browser_duck_typing.js)
 * [detect_change_in_form.js](./js/detect_change_in_form.js)
 
 ### [others](./others/)
