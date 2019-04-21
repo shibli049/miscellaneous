@@ -1,5 +1,9 @@
 #! /usr/local/bin/python3.7
 
+``` Usage: cron job
+  1 */1 * * * simple_run_weekly.py
+```
+
 from datetime import date
 import json
 from subprocess import  run
