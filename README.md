@@ -55,6 +55,7 @@
 * [local_fileserver.py](./python/local_fileserver.py)
 * [merge_sort.py](./python/merge_sort.py)
 * [scripts.ipynb](./python/scripts.ipynb)
+* [simple_run_weekly.py](./python/simple_run_weekly.py)
 * [trie.py](./python/trie.py)
 
 ### [shells](./shells/)
