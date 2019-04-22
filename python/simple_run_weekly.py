@@ -1,7 +1,7 @@
 #! /usr/local/bin/python3.7
 
 ``` Usage: cron job
-  1 */1 * * * simple_run_weekly.py
+0 */1 * * * simple_run_weekly.py
 ```
 
 from datetime import date
