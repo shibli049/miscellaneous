@@ -26,7 +26,7 @@ try:
             try: 
                 data = json.loads("\n".join(f.readlines()))
             except (BaseException, Exception) as e:
-                pass
+                logging.error("error: {}".format(e))
         logging.info("data: {}".format(data))
         if  not data['sent']:
             run(CMD)
@@ -37,4 +37,8 @@ try:
         f.writelines(t)
     
 except (BaseException, Exception) as e:
-    pass
+    logging.error("error: {}".format(e))
+finally:
+    t = json.dumps(data, indent=2)
+    with open(filename, 'w') as f:
+        f.writelines(t)
