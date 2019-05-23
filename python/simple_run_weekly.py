@@ -30,12 +30,7 @@ try:
         logging.info("data: {}".format(data))
         if  not data['sent']:
             run(CMD)
-            data['sent'] = True
-        
-    t = json.dumps(data, indent=2)
-    with open(filename, 'w') as f:
-        f.writelines(t)
-    
+            data['sent'] = True    
 except (BaseException, Exception) as e:
     logging.error("error: {}".format(e))
 finally:
