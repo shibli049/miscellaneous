@@ -59,6 +59,6 @@ docker run -dit --restart unless-stopped --name container_name -p host_port:cont
 # see container mount points
 docker inspect -f "{{ .Mounts }}" container_name/container_id
 # see container mount points in json format
-docker inspect -f '{{ json .Mounts }}' maxcore-db | jq # you need to install jq on ubuntu for pretty prints
+docker inspect -f '{{ json .Mounts }}' container-name | jq # you need to install jq on ubuntu for pretty prints
 
 
