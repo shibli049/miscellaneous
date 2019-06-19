@@ -6,6 +6,7 @@
 
 * [docker_commads.sh](./docker/docker_commads.sh)
 * [docker_swarm.sh](./docker/docker_swarm.sh)
+* [Dockerfile.nginx.ng](./docker/Dockerfile.nginx.ng): Dockerfile to build and deploy angular project in production.
 
 ### [elasticsearch_template](./elasticsearch_template/)
 
