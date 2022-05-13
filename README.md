@@ -55,6 +55,7 @@
 * [kill_java_process_on_windows.py](./python/kill_java_process_on_windows.py)
 * [local_fileserver.py](./python/local_fileserver.py)
 * [merge_sort.py](./python/merge_sort.py)
+* [monty_hall_simulation.py](./python/monty_hall_simulation.py)
 * [scripts.ipynb](./python/scripts.ipynb)
 * [simple_run_weekly.py](./python/simple_run_weekly.py)
 * [trie.py](./python/trie.py)
