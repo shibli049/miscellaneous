@@ -15,72 +15,72 @@ It became famous as a question from reader Craig F. Whitaker's letter quoted in 
 source: https://en.wikipedia.org/wiki/Monty_Hall_problem
 """
 
+# ---------------- helpers ----------------
+
 import random
-import string
-
-# creates a random string of length between 15 and 30
-def rand_string():
-    characters = string.ascii_letters + string.digits + string.punctuation
-    return ''.join(random.choice(characters) for i in range(random.randint(15, 30)))
-
 # creates a random number between 0 and n
 def rand_range(n):
-#     random.seed(rand_string())
     return random.randrange(n)
 
 # choose an item randomly from the list
 def rand_item(lst):
-#     random.seed(rand_string())
     return random.choice(lst)
 
-# player choose a door
-def choose_door(switch_door = False):
-    door_num = 3 # number of doors
-    doors = [0] * door_num # initialize the doors
-    choosen = rand_range(door_num) # choose a random door to put the prize behind the door
-    doors[choosen] = 1 # prize is set
-    player_choice = rand_range(door_num) # player choose a random door
-    if switch_door:
-        shown = show_door(door_num, choosen, player_choice) # hosts show a door, behind which there is a goat
-        final_choice = switch_to_new_door(doors, player_choice, shown)
-        return len(final_choice) == 1 and final_choice[0] == 1
-    else:
-        # no matter which door the presenter shows, player's decision is final
-        return doors[player_choice] == 1
+def put_the_prize_behind_door(door_num):
+    # initialize the doors
+    doors = [0] * door_num
+    # choose a random door to put the prize behind the door
+    choosen = rand_range(door_num)
+    # prize is set
+    doors[choosen] = 1
+    return doors,choosen
 
-def switch_to_new_door(doors, player_choice, shown):
-    # remove the shown door and player choice and choose the 3rd door
-    return [doors[ind] for ind, elem in enumerate(doors) if ind not in [shown, player_choice]]
 
 def show_door(door_num, choosen, player_choice):
     # remove the door player choose, and the door behind which the prize is
     choice = [ele for ele in range(door_num) if ele not in [choosen, player_choice]]
     return rand_item(choice)
-
+  
+def switch_to_new_door(doors, player_choice, shown):
+    # remove the shown door and player choice and choose the 3rd door
+    return [doors[ind] for ind, elem in enumerate(doors) if ind not in [shown, player_choice]]
+  
 def generate_stat(switch_door, success_count, total):
     return f"Switch door: {switch_door}, Total: {total}, Success: {success_count}, percent: {((1.0 * success_count)/total) * 100}"
+  
+# ---------------- the game ----------------
+# player choose a door, and switch based on flag
+def play_the_game(switch_door = False):
+    # number of doors
+    door_num = 3
+    doors, choosen = put_the_prize_behind_door(door_num)
+    # player choose a random door
+    player_choice = rand_range(door_num)
+    if switch_door:
+        # host show a door, behind which there is a goat
+        shown = show_door(door_num, choosen, player_choice)
+        final_choice = switch_to_new_door(doors, player_choice, shown)
+        return len(final_choice) == 1 and final_choice[0] == 1
+    else:
+        # no matter which door the presenter shows, player's decision is final
+        return doors[player_choice] == 1
+  
 
-def simulate(sim_num = 1000, switch_door = False):
+# ---------------- tests ----------------
+def simulate(N = 10001, switch_door = False):
     success_count = 0
-    for i in range(sim_num):
-        if choose_door(switch_door = switch_door):
+    for i in range(N):
+        if play_the_game(switch_door):
             success_count += 1
-        if i % 10000 == 9999:
-            print(generate_stat(switch_door, success_count, i + 1))
-    return generate_stat(switch_door, success_count, sim_num)
+    return generate_stat(switch_door, success_count, N)
 
 
 
 if __name__ == "__main__":
-    # n = 999_999_999_999
-    n = 10000_00
-    print(len(rand_string()))
-    print(len(rand_string()))
+    n = 9999_99 # the bigger the size, the better the result
+    
     switch_rates = simulate(n, True)
-    other_rates = simulate(n, False)
-    print("Final result: ==============================")
     print(switch_rates)
+    
+    other_rates = simulate(n, False)
     print(other_rates)
-
-
-
